@@ -1,4 +1,4 @@
-/* Generated on: Sat Dec 10 2022 00:28:08 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Sat Dec 17 2022 07:20:21 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -352,11 +352,7 @@ html[data-w-dynpage] [data-w-cloak] {
     bottom: auto;
     z-index: auto;
     display: block;
-
     visibility: hidden;
-    /* visibility: visible; */
-
-
     overflow: visible;
     overflow-x: visible;
     overflow-y: visible;
@@ -413,10 +409,7 @@ html[data-w-dynpage] [data-w-cloak] {
 .w-webflow-badge {
     position: fixed !important;
     display: inline-block !important;
-
-    /* visibility: visible !important; */
-    visibility: hidden;
-
+    visibility: hidden !important;
     z-index: 2147483647 !important;
     top: auto !important;
     right: 12px !important;
@@ -442,9 +435,7 @@ html[data-w-dynpage] [data-w-cloak] {
 
 .w-webflow-badge>img {
     display: inline-block !important;
-    /* visibility: visible !important; */
-    visibility: hidden;
-    
+    visibility: hidden !important;
     opacity: 1 !important;
     vertical-align: middle !important
 }
@@ -2351,7 +2342,6 @@ textarea.w-select {
 }
 
 .subspace-body {
-    overflow: hidden;
     background-color: #1c1c1c;
     color: #ebebeb;
 }
@@ -3024,8 +3014,27 @@ textarea.w-select {
 }
 
 .intro-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     overflow: hidden;
     margin-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column-gap: 120px;
+    grid-row-gap: 120px;
 }
 
 .fill {
